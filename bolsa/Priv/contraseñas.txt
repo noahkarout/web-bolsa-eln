@@ -1,0 +1,2 @@
+contraseña phpmyadmin para registro: pmaadminbolsa
+salt: salt-de-seguridad-bolsa

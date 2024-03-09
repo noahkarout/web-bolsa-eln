@@ -1,0 +1,132 @@
+@font-face {
+    font-family: nexah;
+    src: url('fonts/Nexa-Heavy.ttf') format('truetype'); /* Cambia la extensión según el tipo de fuente */
+}
+
+@font-face {
+    font-family: nexal;
+    src: url('fonts/Nexa-ExtraLight.ttf') format('truetype'); /* Cambia la extensión según el tipo de fuente */
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: nexal, sans-serif; /* Utiliza la misma tipografía que en index.css */
+}
+
+.container {
+    text-align: center;
+    background-color: #333;
+    padding: 20px 30px; /* Aumenta el valor de padding horizontal para separar más los bordes laterales */
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(150, 95, 212, 0.4);
+    width: 70%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Estilos para el título */
+h1 {
+    color: #fff;
+    font-family: nexah;
+}
+
+/* Estilos para el formulario */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-family: nexal, sans-serif; /* Utiliza la misma tipografía que en index.css */
+}
+
+/* Estilos para el botón de registro */
+.login-button {
+    background-color: #965fd4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: nexal, sans-serif; /* Utiliza la misma tipografía que en index.css */
+}
+
+/* Estilos para el botón de registro al pasar el ratón sobre él */
+.login-button:hover {
+    background-color: #734f9a;
+}
+
+/* Estilos para el logo */
+.logo {
+    position: absolute;
+    top: 30px; /* Ajusta la distancia desde la parte superior según sea necesario */
+    left: 30px; /* Ajusta la distancia desde la izquierda según sea necesario */
+    max-width: 40px; /* Ajusta el tamaño máximo del logo según sea necesario */
+}
+
+/* Estilos para el texto "Bolsa ELN" */
+.título {
+    position: absolute;
+    top: 30px; /* Ajusta la distancia desde la parte superior según sea necesario */
+    right: 35px; /* Ajusta la distancia desde la derecha según sea necesario */
+    max-width: 200px; /* Ajusta el tamaño máximo del texto según sea necesario */
+    font-size: 20px;
+    font-family: nexah, sans-serif;
+}
+
+/* Estilos para la mini foto */
+.mini-photo {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para la ventana emergente */
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.infocontact {
+    font-family: nexah, sans-serif;
+}
+
+.txtcontact {
+    font-family: nexal, sans-serif;
+}

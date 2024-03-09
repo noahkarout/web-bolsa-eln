@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/logobolsaeln.png">
+    <title>Inicio</title>
+</head>
+<body>
+    <?php
+    // Verificar si se ha iniciado sesión
+    session_start();
+    if (!isset($_SESSION['email'])) {
+        // Redirigir al usuario a la página de inicio de sesión si no se ha iniciado sesión
+        header("Location: access.html");
+        exit(); // Salir para evitar que el resto de la página se procese
+    } else {
+        // La sesión está iniciada, obtén el nombre de usuario desde la sesión o la base de datos
+        $email = $_SESSION['email'];
+
+        // Configuración de la conexión a la base de datos
+        $servername = "localhost";
+        $username = "bolsa_eln";
+        $password = "pmaadmineln";
+        $dbname = "bolsa_eln";
+
+        // Crear una conexión a la base de datos
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Verificar la conexión
+        if ($conn->connect_error) {
+            die("La conexión a la base de datos falló: " . $conn->connect_error);
+        }
+
+        // Consulta para obtener el nombre de usuario a partir del correo electrónico
+        $sql = "SELECT nombre_usuario FROM usuarios WHERE email = '$email'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows == 1) {
+            // Obtener el nombre de usuario
+            $row = $result->fetch_assoc();
+            $nombre_usuario = $row['nombre_usuario'];
+        }
+
+        // Cerrar la conexión a la base de datos
+        $conn->close();
+    }
+    ?>
+
+    <div class="container">
+        <h1>Bienvenido</h1>
+        <p>¡Hola, <?php echo $nombre_usuario; ?>!</p>
+        <!-- El saldo se mostrará aquí (debes agregar lógica para obtenerlo) -->
+        <a href="php/logout.php" class="logout-button">Cerrar Sesión</a>
+    </div>
+</body>
+</html>

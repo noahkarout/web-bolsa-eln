@@ -1,0 +1,7 @@
+en registro.php 
+en esta linea = $sql = "INSERT INTO usuarios (nombre_usuario, email, contrasena) VALUES ('$nombre_usuario', '$email', '$contrasena')";
+cambiar '$contrasena' por '$hashed_password' para que se encripten automaticamente en la db para el signup
+
+en login.php
+en esta linea = $sql = "SELECT * FROM usuarios WHERE email = '$mail' AND contrasena = '$contrasena'";
+cambiar '$contrasena' por '$hashed_password' para que se desencripten automaticamente de la db para el login

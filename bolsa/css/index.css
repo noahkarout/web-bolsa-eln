@@ -1,0 +1,47 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: nexal, sans-serif; /* Utiliza la misma tipografía que en index.css */
+}
+
+.container {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(150, 95, 212, 0.4);
+    width: 90%;
+    max-width: 600px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: nexah;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de cierre de sesión */
+.logout-button {
+    background-color: #965fd4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Estilos para el botón de cierre de sesión al pasar el ratón sobre él */
+.logout-button:hover {
+    background-color: #734f9a;
+}

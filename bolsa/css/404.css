@@ -1,0 +1,100 @@
+@font-face {
+    font-family: nexah;
+    src: url('fonts/nexa-heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: nexal;
+    src: url('fonts/nexa-extralight.ttf') format('truetype');
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1dff; /* Cambiamos el fondo del cuerpo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    font-family: nexah, sans-serif;
+    background-color: #333; /* Cambiamos el fondo del contenedor */
+    padding: 50px; /* Aumentamos el espacio entre el contenido y el contenedor */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(150, 95, 212, 0.4);
+}
+
+/* Estilos para el botón de inicio */
+.home-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px; /* Mayor margen inferior para separar del mensaje de error */
+    cursor: pointer;
+}
+
+/* Estilos para los botones al pasar el ratón sobre ellos */
+.home-button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para la mini foto */
+.mini-photo {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para la ventana emergente */
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.infocontact {
+    font-family: nexah, sans-serif;
+}
+
+.txtcontact {
+    font-family: nexal, sans-serif;
+}
+
+/* Estilos para el logo */
+.logo {
+    position: absolute;
+    top: 30px; /* Ajusta la distancia desde la parte superior según sea necesario */
+    left: 30px; /* Ajusta la distancia desde la izquierda según sea necesario */
+    max-width: 40px; /* Ajusta el tamaño máximo del logo según sea necesario */
+}
+
+/* Estilos para el texto "Bolsa ELN" */
+.título {
+    position: absolute;
+    top: 30px; /* Ajusta la distancia desde la parte superior según sea necesario */
+    right: 35px; /* Ajusta la distancia desde la derecha según sea necesario */
+    max-width: 200px; /* Ajusta el tamaño máximo del texto según sea necesario */
+    font-size: 20px;
+    font-family: nexah, sans-serif;
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+verde oscuro #3f6d4e (63, 109, 78)
+verde claro #8bd450 (139, 212, 80)
+azul oscuro #1d1a2f (29, 26, 47)
+morado claro #965fd4 (150, 95, 212)
+morado oscuro #734f9a (115, 79, 154)
+https://www.egames.news/entretenimiento/Armored-Core-6-Como-pintar-tu-Mecha-con-los-colores-de-Evangelion-01-y-02-20230825-0002.html
+
+fondo gris oscuro #1d1d1dff
+gris claro #333
